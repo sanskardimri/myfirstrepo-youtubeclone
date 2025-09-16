@@ -1,0 +1,1405 @@
+            a {
+                color: black;             
+                text-decoration: none;   
+            }
+
+
+            body {
+               font-family: 'Roboto', sans-serif; 
+               margin: 0;
+               padding: 0; 
+               padding-top: 80px;
+               padding-left: 96px;
+               padding-right: 24px;
+               background-color: rgb(245, 245, 245);
+                
+            }
+            
+            .headerdiv {
+                display: flex;
+                flex-direction: row;
+                border-width: 2px;
+                border-color: burlywood;
+                height: 55px;
+                justify-content: space-between;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 100;
+                background-color: white;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: rgb(228,228,228);
+                
+
+            }
+
+            .thumbnail1:hover, .thumbnail2:hover, .thumbnail3:hover, 
+            .thumbnail4:hover, .thumbnail5:hover, .thumbnail6:hover {
+             cursor: pointer;   
+            }
+
+            .title1:hover, .title2:hover, .title3:hover,
+            .title4:hover,.title5:hover,.title6:hover {
+             cursor: pointer;
+            }
+
+            .channelimage1:hover, .channelimage2:hover, .channelimage3:hover,
+            .channelimage4:hover, .channelimage5:hover, .channelimage6:hover {
+                cursor: pointer;
+            }
+
+            .left-sectiondiv {
+                display: flex;
+                align-items: center;
+
+            }
+
+            .menuimg {
+                height: 24px;
+                margin-left: 24px;
+                margin-right: 20px;
+
+            }
+
+            .youtubeimg {
+                height: 20px;
+
+            }
+
+            
+
+            .center-sectiondiv {
+                display: flex;
+                flex: 1;
+                margin-left: 175px;
+                margin-right: 135px;
+                max-width: 500px;
+                align-items: center;
+
+            }
+
+            .searchbox {
+                flex: 1;                         
+                height: 33px;
+                padding-left: 10px;   
+                border-width: 1px;
+                border-style: solid;      
+                border-color: rgb(195, 191, 191);        
+                border-radius: 2px;
+                box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+                width: 0;                                                                                               ;
+            }   
+            
+
+            .searchbox::placeholder {
+                font-family: 'Roboto', sans-serif;                        
+                font-size: 15px;
+            
+            }
+            
+            .searchbutton {
+                height: 36px;
+                width: 60px; 
+                border: none;
+                border-color: rgb(224, 224, 224);
+                
+            }
+            
+            .searchimg {
+                height: 24px;
+            }
+
+            .searchtext {
+                position: absolute;
+                background: gray;
+                color: white;
+                padding-left: 4px;      
+                padding-right: 4px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 2px;
+                font-size: 12px;
+                bottom: -38px;
+                opacity: 0;
+                transition: 0.15;
+                       
+            }
+            .searchbutton:hover .searchtext{
+                opacity: 1;
+            }
+            
+
+            .voicesearchbutton{
+                display: flex;
+                justify-content: center;
+                height: 40px;
+                width: 40px;
+                border: none;
+                border-radius: 20px;
+                background-color: rgb(226, 226, 226);
+                position: relative;
+                margin-left: 6px;
+            }
+
+            .voicesearchimg {
+                height: 24px;
+                margin-top: 4px;
+               
+            }
+            
+            .searchtextvoice {
+                position: absolute;
+                background: gray;
+                color: white;
+                padding-left: 4px;      
+                padding-right: 4px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 2px;
+                font-size: 12px;
+                bottom: -45px;
+                opacity: 0;
+                transition: 0.15;
+                white-space: nowrap;
+                       
+            }
+
+            .voicesearchbutton:hover .searchtextvoice{
+                opacity: 1;
+            }
+        
+
+            .right-sectiondiv {
+                width: 180px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 20px;
+                flex-shrink: 0;
+            }
+            
+            .uploaddiv {
+                display: flex;
+                justify-content: center;
+                height: 40px;
+                width: 40px;
+                border: none;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 6px;
+                margin-top: 16px; 
+                
+            } 
+
+            .upload-icon {
+                height: 24px;
+
+            }
+
+            .crttext {
+                font-family:'Roboto', sans-serif;
+                position: absolute;
+                background: gray;
+                color: white;
+                padding-left: 4px;      
+                padding-right: 4px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 2px;
+                font-size: 12px;
+                bottom: -45px;
+                opacity: 0;
+                transition: 0.15;
+                white-space: nowrap;
+                       
+            }
+
+            .uploaddiv:hover .crttext {
+                opacity: 1;
+
+            }
+
+            .ytappsdiv {
+                display: flex;
+                justify-content: center;
+                height: 40px;
+                width: 40px;
+                border: none;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 6px;
+                margin-top: 16px; 
+
+            }
+            .youtubeapps-icon {
+                height: 24px;
+
+            }
+
+            .ytappstext{
+                font-family:'Roboto', sans-serif;
+                position: absolute;
+                background: gray;
+                color: white;
+                padding-left: 4px;      
+                padding-right: 4px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 2px;
+                font-size: 12px;
+                bottom: -45px;
+                opacity: 0;
+                transition: 0.15;
+                white-space: nowrap;
+            }
+
+            .ytappsdiv:hover .ytappstext {
+                opacity: 1;
+
+            }
+
+            .notification-icon {
+                height: 24px;
+                
+ 
+            }
+
+            .notification-icon-container {
+                display: flex;
+                justify-content: center;
+                height: 40px;
+                width: 40px;
+                border: none;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 6px;
+                margin-top: 16px; 
+                margin-right: 12px;
+
+            } 
+
+            .notificationcount {
+              position: absolute;
+              top: -2px;
+              right: 2px;
+              background-color: rgb(210, 7, 7);
+              color: white;
+              font-family:'Roboto', sans-serif;
+              font-size: 11px;
+              padding-left: 5px;
+              padding-right: 5px;
+              padding-top: 2px;
+              padding-bottom: 2px;
+              border-radius: 10px;
+                
+
+            }
+
+            .notificationtext {
+                font-family:'Roboto', sans-serif;
+                position: absolute;
+                background: gray;
+                color: white;
+                padding-left: 4px;      
+                padding-right: 4px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 2px;
+                font-size: 12px;
+                bottom: -45px;
+                opacity: 0;
+                transition: 0.15;
+                white-space: nowrap;
+            }
+
+            .notification-icon-container:hover .notificationtext {
+                opacity: 1;
+            }
+
+            .mychannel-icon {
+                height: 30px;
+                border-radius: 15px;
+
+            }
+
+
+
+            .side-bardiv {
+                position: fixed;
+                left: 0;
+                top: 56px;
+                bottom: 0;
+                background-color: rgb(255, 255, 255);
+                width: 72px;
+                padding-top: 4px;
+                z-index: 200;
+            }
+
+            .sidebar-link {
+                font-size: 10px;
+                height: 74px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin-bottom: 2px;
+            }
+
+            .sidebar-link:hover {
+                background-color: rgb(234, 234, 234);
+            }
+
+            .sidebar-link img {
+                height: 26px;
+                margin-bottom: 6px;
+            }
+            
+            .sidebar-link div {
+                font-family:'Roboto', sans-serif;
+                font-size: 10px;
+            }
+
+         
+            .main-griddiv {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
+                padding: 20px;
+                
+
+            }
+
+            @media (max-width: 750px)  {
+                .main-griddiv{
+                    grid-template-columns: 1fr 1fr;
+                }
+
+            }
+
+             @media (min-width: 1000px)  {
+                .main-griddiv{
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                }
+
+            }
+
+             @media (max-width: 751px) and (min-width: 999px)  {
+                .main-griddiv{
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+
+            }
+            
+            
+            p { 
+                margin: 0;
+                font-family: 'Roboto', sans-serif;
+            }
+              
+            .div1 {
+                display: block;
+                width: 100%;
+            }
+
+            .thumbnaildiv1 {
+                display:inline-block;
+                width: 100%;
+                position: relative;
+            }
+
+            .thumbnail1 {
+                width: 100%;
+            }
+
+            .video-time1 {
+                background-color: black;
+                position: absolute;
+                color: white;
+                bottom: 17px ;
+                right: 5px;
+                font-family:'Roboto', sans-serif;
+                font-size: 12px;
+                padding: 4px 4px 4px 4px ;
+                font-weight: 500;
+                border-radius: 3px;
+                
+            }
+
+            .specksdiv1 {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+
+            .channelimagediv1 {
+                width: 40px;
+                vertical-align: top;
+                margin-top: 12px;
+            }
+
+            .channelimage1 {
+                width: 36px;
+                border-radius: 25px;
+            }
+
+            .textdiv1 {
+                display: inline-block;
+                width: 200px;
+                margin-top: 10px;
+            }
+
+            .title1 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left:10px;
+                margin-bottom: 8px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+                
+                }
+                
+            .channelname1 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-bottom: 4px;
+                color: gray;
+                font-size: 13px;
+                
+            }
+
+            .views1 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 0px;
+                margin-left: 10px;
+                margin-bottom: 0px;
+                color: gray;
+                font-size: 13px;
+
+            }
+
+            .div2 {
+                display: block;
+                width: 100%;
+            }
+            
+
+
+            .thumbnaildiv2 {
+                display:inline-block;
+                width: 100%;
+                position: relative;
+            }
+
+            .thumbnail2 {
+                width: 100%;
+        
+            }
+
+            .video-time2 {
+                background-color: black;
+                position: absolute;
+                color: white;
+                bottom: 17px ;
+                right: 5px;
+                font-family:'Roboto', sans-serif;
+                font-size: 12px;
+                padding: 4px 4px 4px 4px ;
+                font-weight: 500;
+                border-radius: 3px;
+                
+            }
+
+            .specksdiv2 {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+
+
+            .channelimagediv2 {
+                display: inline-block;
+                width: 40px;
+                vertical-align: top;
+                margin-top: 12px;
+            }
+
+            .channelimage2 {
+                width: 36px;
+                border-radius: 25px;
+            }
+
+            .textdiv2 {
+                display: inline-block;
+                width: 200px;
+                margin-top: 10px;
+            }
+
+            .title2 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left:10px;
+                margin-bottom: 8px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+                
+                }
+                
+            .channelname2 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-bottom: 4px;
+                color: gray;
+                font-size: 13px;
+                
+                
+            }
+
+            .views2 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 0px;
+                margin-left: 10px;
+                margin-bottom: 0px;
+                color: gray;
+                font-size: 13px;
+                
+
+            }
+
+            .div3 {
+                display: block;
+                width: 100%;
+            }
+
+            .thumbnaildiv3 {
+                display:inline-block;
+                width: 100%;
+                position: relative;
+            }
+
+            .thumbnail3 {
+                width: 100%;
+        
+            }
+
+            .video-time3 {
+                background-color: black;
+                position: absolute;
+                color: white;
+                bottom: 17px ;
+                right: 5px;
+                font-family:'Roboto', sans-serif;
+                font-size: 12px;
+                padding: 4px 4px 4px 4px ;
+                font-weight: 500;
+                border-radius: 3px;
+                
+            }
+
+            .specksdiv3 {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+
+            .channelimagediv3 {
+                width: 40px;
+                vertical-align: top;
+                margin-top: 12px;
+            }
+
+            .channelimage3 {
+                width: 36px;
+                border-radius: 25px;
+            }
+
+
+            .textdiv3 {
+                display: inline-block;
+                width: 200px;
+                margin-top: 10px;
+            }
+
+            .title3 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left:10px;
+                margin-bottom: 8px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+                
+                }
+                
+            .channelname3 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-bottom: 4px;
+                color: gray;
+                font-size: 13px;
+                
+            }
+
+            .views3 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 0px;
+                margin-left: 10px;
+                margin-bottom: 0px;
+                color: gray;
+                font-size: 13px;
+
+            }
+
+            .div4 {
+                display: block;
+                width: 100%;
+            }
+
+            .thumbnaildiv4 {
+                display:inline-block;
+                width: 100%;
+                position: relative;
+            }
+
+            .thumbnail4 {
+                width: 100%;
+        
+            }
+
+            .video-time4 {
+                background-color: black;
+                position: absolute;
+                color: white;
+                bottom: 17px ;
+                right: 5px;
+                font-family:'Roboto', sans-serif;
+                font-size: 12px;
+                padding: 4px 4px 4px 4px ;
+                font-weight: 500;
+                border-radius: 3px;
+                
+            }
+
+            .specksdiv4 {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+
+            .channelimagediv4 {
+                width: 40px;
+                vertical-align: top;
+                margin-top: 12px;
+            }
+
+            .channelimage4 {
+                width: 36px;
+                border-radius: 25px;
+            }
+
+
+            .textdiv4 {
+                display: inline-block;
+                width: 200px;
+                margin-top: 10px;
+            }
+
+            .title4 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left:10px;
+                margin-bottom: 8px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+                
+                }
+                
+            .channelname4 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-bottom: 4px;
+                color: gray;
+                font-size: 13px;
+                
+            }
+
+            .views4 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 0px;
+                margin-left: 10px;
+                margin-bottom: 0px;
+                color: gray;
+                font-size: 13px;
+
+            }
+
+            .div5 {
+                display: block;
+                width: 100%;
+            }
+
+            .thumbnaildiv5 {
+                display:inline-block;
+                width: 100%;
+                position: relative;
+            }
+
+            .thumbnail5 {
+                width: 100%;
+        
+            }
+
+            .video-time5 {
+                background-color: black;
+                position: absolute;
+                color: white;
+                bottom: 17px ;
+                right: 5px;
+                font-family:'Roboto', sans-serif;
+                font-size: 12px;
+                padding: 4px 4px 4px 4px ;
+                font-weight: 500;
+                border-radius: 3px;
+                
+            }
+
+            .specksdiv5 {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+
+            .channelimagediv5 {
+                width: 40px;
+                vertical-align: top;
+                margin-top: 12px;
+            }
+
+            .channelimage5 {
+                width: 36px;
+                border-radius: 25px;
+            }
+
+            .textdiv5 {
+                display: inline-block;
+                width: 200px;
+                margin-top: 10px;
+            }
+
+            .title5 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left:10px;
+                margin-bottom: 8px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+                
+                }
+                
+            .channelname5 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-bottom: 4px;
+                color: gray;
+                font-size: 13px;
+                
+            }
+
+            .views5 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 0px;
+                margin-left: 10px;
+                margin-bottom: 0px;
+                color: gray;
+                font-size: 13px;
+
+            }
+
+            .div6 {
+                display: block;
+                width: 100%;
+            }
+
+            .thumbnaildiv6 {
+                display:inline-block;
+                width: 100%;
+                position: relative;
+            }
+
+            .thumbnail6 {
+                width: 100%;
+        
+            }
+
+            .video-time6 {
+                background-color: black;
+                position: absolute;
+                color: white;
+                bottom: 17px ;
+                right: 5px;
+                font-family:'Roboto', sans-serif;
+                font-size: 12px;
+                padding: 4px 4px 4px 4px ;
+                font-weight: 500;
+                border-radius: 3px;
+                
+            }
+
+            .specksdiv6 {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+
+            .channelimagediv6 {
+                width: 40px;
+                vertical-align: top;
+                margin-top: 12px;
+            }
+
+            .channelimage6 {
+                width: 36px;
+                border-radius: 25px;
+            }
+
+
+            .textdiv6 {
+                display: inline-block;
+                width: 200px;
+                margin-top: 10px;
+            }
+
+            .title6 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left:10px;
+                margin-bottom: 8px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+                
+                }
+                
+            .channelname6 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-bottom: 4px;
+                color: gray;
+                font-size: 13px;
+                
+            }
+
+            .views6 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 0px;
+                margin-left: 10px;
+                margin-bottom: 0px;
+                color: gray;
+                font-size: 13px;
+
+            }
+
+                    .div7 {
+                display: block;
+                width: 100%;
+            }
+
+            .thumbnaildiv7 {
+                display:inline-block;
+                width: 100%;
+                position: relative;
+            }
+
+            .thumbnail7 {
+                width: 100%;
+            }
+
+            .video-time7 {
+                background-color: black;
+                position: absolute;
+                color: white;
+                bottom: 17px ;
+                right: 5px;
+                font-family:'Roboto', sans-serif;
+                font-size: 12px;
+                padding: 4px 4px 4px 4px ;
+                font-weight: 500;
+                border-radius: 3px;
+                
+            }
+
+            .specksdiv7 {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+
+            .channelimagediv7 {
+                width: 40px;
+                vertical-align: top;
+                margin-top: 12px;
+            }
+
+            .channelimage7 {
+                width: 36px;
+                border-radius: 25px;
+            }
+
+            .textdiv7 {
+                display: inline-block;
+                width: 200px;
+                margin-top: 10px;
+            }
+
+            .title7 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left:10px;
+                margin-bottom: 8px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+                
+                }
+                
+            .channelname7 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-bottom: 4px;
+                color: gray;
+                font-size: 13px;
+                
+            }
+
+            .views7 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 0px;
+                margin-left: 10px;
+                margin-bottom: 0px;
+                color: gray;
+                font-size: 13px;
+
+            }
+
+            .div8 {
+                display: block;
+                width: 100%;
+            }
+
+            .thumbnaildiv8 {
+                display:inline-block;
+                width: 100%;
+                position: relative;
+            }
+
+            .thumbnail8 {
+                width: 100%;
+            }
+
+            .video-time8 {
+                background-color: black;
+                position: absolute;
+                color: white;
+                bottom: 17px ;
+                right: 5px;
+                font-family:'Roboto', sans-serif;
+                font-size: 12px;
+                padding: 4px 4px 4px 4px ;
+                font-weight: 500;
+                border-radius: 3px;
+                
+            }
+
+            .specksdiv8 {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+
+            .channelimagediv8 {
+                width: 40px;
+                vertical-align: top;
+                margin-top: 12px;
+            }
+
+            .channelimage8 {
+                width: 36px;
+                border-radius: 25px;
+            }
+
+            .textdiv8 {
+                display: inline-block;
+                width: 200px;
+                margin-top: 10px;
+            }
+
+            .title8 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left:10px;
+                margin-bottom: 8px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+                
+                }
+                
+            .channelname8 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-bottom: 4px;
+                color: gray;
+                font-size: 13px;
+                
+            }
+
+            .views8 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 0px;
+                margin-left: 10px;
+                margin-bottom: 0px;
+                color: gray;
+                font-size: 13px;
+
+            }
+
+            
+
+            .div9 {
+                display: block;
+                width: 100%;
+            }
+
+            .thumbnaildiv9 {
+                display:inline-block;
+                width: 100%;
+                position: relative;
+            }
+
+            .thumbnail9 {
+                width: 100%;
+            }
+
+            .video-time9 {
+                background-color: black;
+                position: absolute;
+                color: white;
+                bottom: 17px ;
+                right: 5px;
+                font-family:'Roboto', sans-serif;
+                font-size: 12px;
+                padding: 4px 4px 4px 4px ;
+                font-weight: 500;
+                border-radius: 3px;
+                
+            }
+
+            .specksdiv9 {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+
+            .channelimagediv9 {
+                width: 40px;
+                vertical-align: top;
+                margin-top: 12px;
+            }
+
+            .channelimage9 {
+                width: 36px;
+                border-radius: 25px;
+            }
+
+            .textdiv9 {
+                display: inline-block;
+                width: 200px;
+                margin-top: 10px;
+            }
+
+            .title9 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left:10px;
+                margin-bottom: 8px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+                
+                }
+                
+            .channelname9 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-bottom: 4px;
+                color: gray;
+                font-size: 13px;
+                
+            }
+
+            .views9  {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 0px;
+                margin-left: 10px;
+                margin-bottom: 0px;
+                color: gray;
+                font-size: 13px;
+
+            }
+
+            .div10 {
+                display: block;
+                width: 100%;
+            }
+
+            .thumbnaildiv10 {
+                display:inline-block;
+                width: 100%;
+                position: relative;
+            }
+
+            .thumbnail10 {
+                width: 100%;
+            }
+
+            .video-time10 {
+                background-color: black;
+                position: absolute;
+                color: white;
+                bottom: 17px ;
+                right: 5px;
+                font-family:'Roboto', sans-serif;
+                font-size: 12px;
+                padding: 4px 4px 4px 4px ;
+                font-weight: 500;
+                border-radius: 3px;
+                
+            }
+
+            .specksdiv10 {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+
+            .channelimagediv10 {
+                width: 40px;
+                vertical-align: top;
+                margin-top: 12px;
+            }
+
+            .channelimage10 {
+                width: 36px;
+                border-radius: 25px;
+            }
+
+            .textdiv10 {
+                display: inline-block;
+                width: 200px;
+                margin-top: 10px;
+            }
+
+            .title10 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left:10px;
+                margin-bottom: 8px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+                
+                }
+                
+            .channelname10 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-bottom: 4px;
+                color: gray;
+                font-size: 13px;
+                
+            }
+
+            .views10 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 0px;
+                margin-left: 10px;
+                margin-bottom: 0px;
+                color: gray;
+                font-size: 13px;
+
+            }
+
+             .div11 {
+                display: block;
+                width: 100%;
+            }
+
+            .thumbnaildiv11 {
+                display:inline-block;
+                width: 100%;
+                position: relative;
+            }
+
+            .thumbnail11 {
+                width: 100%;
+            }
+
+            .video-time11 {
+                background-color: black;
+                position: absolute;
+                color: white;
+                bottom: 17px ;
+                right: 5px;
+                font-family:'Roboto', sans-serif;
+                font-size: 12px;
+                padding: 4px 4px 4px 4px ;
+                font-weight: 500;
+                border-radius: 3px;
+                
+            }
+
+            .specksdiv11 {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+
+            .channelimagediv11 {
+                width: 40px;
+                vertical-align: top;
+                margin-top: 12px;
+            }
+
+            .channelimage11 {
+                width: 36px;
+                border-radius: 25px;
+            }
+
+            .textdiv11 {
+                display: inline-block;
+                width: 200px;
+                margin-top: 10px;
+            }
+
+            .title11 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left:10px;
+                margin-bottom: 8px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+                
+                }
+                
+            .channelname11 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-bottom: 4px;
+                color: gray;
+                font-size: 13px;
+                
+            }
+
+            .views11 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 0px;
+                margin-left: 10px;
+                margin-bottom: 0px;
+                color: gray;
+                font-size: 13px;
+
+            }
+
+            .div12 {
+                display: block;
+                width: 100%;
+            }
+
+            .thumbnaildiv12 {
+                display:inline-block;
+                width: 100%;
+                position: relative;
+            }
+
+            .thumbnail12 {
+                width: 100%;
+            }
+
+            .video-time12 {
+                background-color: black;
+                position: absolute;
+                color: white;
+                bottom: 17px ;
+                right: 5px;
+                font-family:'Roboto', sans-serif;
+                font-size: 12px;
+                padding: 4px 4px 4px 4px ;
+                font-weight: 500;
+                border-radius: 3px;
+                
+            }
+
+            .specksdiv12 {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+
+            .channelimagediv12 {
+                width: 40px;
+                vertical-align: top;
+                margin-top: 12px;
+            }
+
+            .channelimage12 {
+                width: 36px;
+                border-radius: 25px;
+            }
+
+            .textdiv12 {
+                display: inline-block;
+                width: 200px;
+                margin-top: 10px;
+            }
+
+            .title12 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left:10px;
+                margin-bottom: 8px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+                
+                }
+                
+            .channelname12 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-bottom: 4px;
+                color: gray;
+                font-size: 13px;
+                
+            }
+
+            .views12 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 0px;
+                margin-left: 10px;
+                margin-bottom: 0px;
+                color: gray;
+                font-size: 13px;
+
+            }
+
+
+
+
+
